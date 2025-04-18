@@ -1,0 +1,51 @@
+{
+	"name": "cxsetup",
+	"scopeName": "source.cxsetup",
+	"fileTypes": [
+		"cxsetup"
+	],
+	"patterns": [
+		{
+			"name": "keyword.control.cxsetup",
+			"match": "\\b(ABS|BACK|CIN|CLEAR|COUT|DIR\\.EXISTS|DIV|ECHO|ECHORDIE|ENDL|ENDL2|FILE\\.EXISTS|FORE|GETPASS|INVERT|NPMRUN|PATH\\.EXISTS|PIPRUN|PKGRUN|PROD|REM|REQINSTALL|REQUIRES|RESET|ROUND|RUN|SAFECIN|SET|STYLE|SUB|SUM|TERMINATE|YAYORNAY)\\b"
+		},
+		{
+			"name": "keyword.operator.negation.cxsetup",
+			"match": "\\b!(ABS|BACK|CIN|CLEAR|COUT|DIR\\.EXISTS|DIV|ECHO|ECHORDIE|ENDL|ENDL2|FILE\\.EXISTS|FORE|GETPASS|INVERT|NPMRUN|PATH\\.EXISTS|PIPRUN|PKGRUN|PROD|REM|REQINSTALL|REQUIRES|RESET|ROUND|RUN|SAFECIN|SET|STYLE|SUB|SUM|TERMINATE|YAYORNAY)\\b"
+		},
+		{
+			"name": "keyword.operator.alwaysrun.cxsetup",
+			"match": "\\b&(ABS|BACK|CIN|CLEAR|COUT|DIR\\.EXISTS|DIV|ECHO|ECHORDIE|ENDL|ENDL2|FILE\\.EXISTS|FORE|GETPASS|INVERT|NPMRUN|PATH\\.EXISTS|PIPRUN|PKGRUN|PROD|REM|REQINSTALL|REQUIRES|RESET|ROUND|RUN|SAFECIN|SET|STYLE|SUB|SUM|TERMINATE|YAYORNAY)\\b"
+		},
+		{
+			"name": "support.function.cachegrab.cxsetup",
+			"match": "c\\d+:\\d+[el]:\\d+:\\d+:[rlbnRLBNekvm]"
+		},
+		{
+			"name": "string.quoted.double.cxsetup",
+			"match": "\"(\\\\.|[^\"])*\""
+		},
+		{
+			"name": "constant.numeric.cxsetup",
+			"match": "-?\\b\\d+(\\.\\d+)?([eE]\\d+)?\\b"
+		},
+		{
+			"name": "comment.line.double-slash.cxsetup",
+			"begin": "//",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.comment.cxsetup"
+				}
+			},
+			"end": "$\\n?"
+		},
+		{
+			"name": "punctuation.terminator.cxsetup",
+			"match": ";"
+		},
+		{
+			"name": "punctuation.separator.cxsetup",
+			"match": "\\?"
+		}
+	]
+}

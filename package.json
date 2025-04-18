@@ -1,0 +1,44 @@
+{
+  	"name": "cxsetup",
+  	"displayName": "CX Setup Language",
+ 	"description": "Syntax highlighting support for CX Setup scripts in VSCode",
+ 	"version": "0.0.1",
+  	"publisher": "MF366",
+	"icon": "logo.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/MF366-Coding/CXSetup-VSCode.git"
+	},
+  	"engines":
+	{
+    	"vscode": "^1.65.0"
+  	},
+  	"categories": ["Programming Languages"],
+  	"contributes":
+  	{
+    	"languages":
+    	[
+      		{
+        		"id": "cxsetup",
+        		"aliases": ["CX Setup", "cxsetup"],
+        		"extensions": [".cxsetup"],
+        		"configuration": "./language-configuration.json"
+      		}
+    	],
+    	"grammars":
+    	[
+      		{
+        		"language": "cxsetup",
+        		"scopeName": "source.cxsetup",
+        		"path": "./syntaxes/cxsetup.tmLanguage.json"
+      		}
+    	],
+    	"snippets":
+    	[
+  			{
+    			"language": "cxsetup",
+    			"path": "./snippets/cxsetup.code-snippets"
+  			}
+		]
+  	}
+}

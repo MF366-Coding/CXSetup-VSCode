@@ -1,0 +1,7 @@
+{
+  "Insert cache grab": {
+    "prefix": "c",
+    "body": ["c0:1l:1:3:b"],
+    "description": "Insert a basic cache grab"
+  }
+}
