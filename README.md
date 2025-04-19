@@ -1,11 +1,9 @@
-> Why did I even make this in the first place?
-
 # CX Setup Syntax Highlighter for VSCode
-What the name says.
+CX Setup is a **scripting language** used in my ContenterX package manager.
 
-A syntax highlighter for my custom scripting language, CXSetup.
+This extension adds Syntax Highlighting to it for VSCode.
 
-How cool, everybody *defo* wanted this.
+No linting (yet :eyes:)...
 
 [**The Language**](https://github.com/MF366-Coding/CXSetup)
 
